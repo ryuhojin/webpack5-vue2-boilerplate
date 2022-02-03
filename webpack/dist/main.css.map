@@ -1,1 +1,0 @@
-{"version":3,"file":"main.css","mappings":"AAiBA","sources":["webpack://vue-webpack/./src/App.vue"],"sourcesContent":["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n#app {\r\n  font-size: 18px;\r\n  font-family: \"Roboto\", sans-serif;\r\n  color: blue;\r\n}\r\n"],"names":[],"sourceRoot":""}
