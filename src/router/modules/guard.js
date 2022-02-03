@@ -5,6 +5,6 @@ import router from "..";
  * @description 라우팅 과정에서 전후처리를 하기 위해 생성됨
  */
 
-router.beforeEach((to, from, next) => { })
+router.beforeEach((to, from, next) => {});
 
-router.afterEach((to, from) => { })
+router.afterEach((to, from) => {});
