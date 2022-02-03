@@ -5,7 +5,7 @@
 - Use Webpack 5
 - Webpack Optimize
 
-> Author : Ryuhojin
+> Author : Ryuhojin <br/>
 > Lighthouse Score : 100
 
 > install
