@@ -1,10 +1,10 @@
 module.exports = {
-    plugins: [
-        [
-            "postcss-preset-env",
-            {
-                // Options
-            },
-        ],
+  plugins: [
+    [
+      "postcss-preset-env",
+      {
+        // Options
+      },
     ],
+  ],
 };
