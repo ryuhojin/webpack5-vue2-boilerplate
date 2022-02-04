@@ -4,6 +4,7 @@
 - No Use Vue Cli
 - Use Webpack 5
 - Webpack Optimize
+- Library : dayjs, lodash-es(treeshaking)
 
 > Author : Ryuhojin <br/>
 > Lighthouse Score : 100
