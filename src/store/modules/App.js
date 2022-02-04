@@ -18,7 +18,7 @@ const asyncCreator = {
 
 /**
  * @name state
- * @description Vuex 상태 
+ * @description Vuex 상태
  */
 const state = {
   app: {
@@ -62,12 +62,12 @@ const mutations = {
 /**
  * @name actions
  * @description VEUX 상태관리의 비동기 처리도 가능함
- *              , 이것은 Mutation에서 다수의 상태 변경이 비동기적으로 수행되었을 경우 예측 불가능한 상태가 되는 것을 막기위한 의도 
+ *              , 이것은 Mutation에서 다수의 상태 변경이 비동기적으로 수행되었을 경우 예측 불가능한 상태가 되는 것을 막기위한 의도
  *              , Action에서는 Mutation으로 commit을 행함으로써 간접적으로 상태를 변경하지만 Action을 호출하기 위한 dispatch 메소드는 Promise를 반환 => 처리의 순서를 제어
  */
 const actions = {
   fetchApp: async () => {
-    await AsyncThunk(NAME, asyncCreator.fetchApp, setTimeout(1));
+    await AsyncThunk(name, asyncCreator.fetchApp, setTimeout(1));
   },
 };
 
