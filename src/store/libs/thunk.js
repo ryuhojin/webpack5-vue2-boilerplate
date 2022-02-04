@@ -1,6 +1,17 @@
 import store from "../index";
+/**
+ * @library Vuex Library
+ * @author 류호진
+ */
 
-const asyncThunk = async (moduleName, asyncMutationType, asyncFunc) => {
+/**
+ * @name AsyncThunk
+ * @param {string} moduleName
+ * @param {string} asyncMutationType
+ * @param {string} asyncFunc
+ * @description Vuex의 Thunk로써 동작과정에 대해서 ACTION에 대하여 PENDING, SUCCESS, ERROR로 동작하게 하여준다.
+ */
+const AsyncThunk = async (moduleName, asyncMutationType, asyncFunc) => {
   const existPendingMutation =
     store._mutations[`${moduleName}/${asyncMutationType.PENDING}`] !==
     undefined;
@@ -31,4 +42,4 @@ const asyncThunk = async (moduleName, asyncMutationType, asyncFunc) => {
       : console.error(e);
   }
 };
-export default asyncThunk;
+export default AsyncThunk;
