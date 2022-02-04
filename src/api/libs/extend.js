@@ -1,5 +1,4 @@
-import axios from "axios";
-
+import service from '..'
 /**
  * @library apiLibrary
  * @author 류호진
@@ -28,7 +27,7 @@ const axiosAll = (apis) => {
  */
 const axiosParams = (method, url, data, headers = {}) => {
   const qs = require("qs");
-  return axios({
+  return service({
     method: method,
     url: url,
     data: qs.stringify(data),

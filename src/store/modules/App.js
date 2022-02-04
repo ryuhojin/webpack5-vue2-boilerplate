@@ -33,7 +33,7 @@ const state = {
  * @description VUEX 상태관리의 동기적 처리를 위함
  */
 const mutations = {
-  [ASYNC.GET_APP.PENDING]: (state) => ({
+  [asyncCreator.fetchApp.PENDING]: (state) => ({
     ...state,
     app: {
       isLoading: true,
@@ -41,7 +41,7 @@ const mutations = {
       data: null,
     },
   }),
-  [ASYNC.GET_APP.SUCCESS]: (state, payload) => ({
+  [asyncCreator.fetchApp.SUCCESS]: (state, payload) => ({
     ...state,
     app: {
       isLoading: false,
@@ -49,7 +49,7 @@ const mutations = {
       data: payload,
     },
   }),
-  [ASYNC.GET_APP.FAILURE]: (state, payload) => ({
+  [asyncCreator.fetchApp.FAILURE]: (state, payload) => ({
     ...state,
     app: {
       isLoading: false,
